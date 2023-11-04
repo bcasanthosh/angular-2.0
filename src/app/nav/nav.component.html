@@ -1,0 +1,56 @@
+
+<h1 class="h1"><i>INSTAGRAM</i></h1> 
+
+<ul>
+<div [ngSwitch]="selectedNavItem">
+    <li><a (click)="selectNavItem('Home')">Home</a></li>
+    <li><a (click)="selectNavItem('search')">search</a></li>
+    <li><a (click)="selectNavItem('explore')">explore</a></li>
+    <li><a (click)="selectNavItem('reels')">reels</a></li>
+    <li><a (click)="selectNavItem('messages')">messages</a></li>
+    <li><a (click)="selectNavItem('notifications')">notifications</a></li>
+    <li><a (click)="selectNavItem('create')">create</a></li>
+    <li><a (click)="selectNavItem('profile')">profile</a></li>
+     <li><a (click)="selectNavItem('more')">more</a></li>
+
+    <div *ngSwitchCase="'Home'">
+      <p>This is the home page.</p>
+    </div>
+
+    <div *ngSwitchCase="'search'">
+      <p>Learn more about us.</p>
+    </div>
+
+    <div *ngSwitchCase="'explore'">
+      <p>explore us here.</p>
+    </div>
+
+    <div *ngSwitchCase="'reels'">
+        <p>This is the home page.</p>
+      </div>
+
+      <div *ngSwitchCase="'messages'">
+        <p>This is the home page.</p>
+      </div>
+
+      <div *ngSwitchCase="'notifications'">
+        <p>This is the home page.</p>
+      </div>
+
+      <div *ngSwitchCase="'create'">
+        <p>This is the home page.</p>
+      </div>
+
+      <div *ngSwitchCase="'profile'">
+        <p>This is the home page.</p>
+      </div>
+
+      <div *ngSwitchCase="'more'">
+        <p>This is the home page.</p>
+      </div>
+
+      <div *ngSwitchDefault>
+        <p>Page not found.</p>
+      </div>
+  </div>
+</ul>
